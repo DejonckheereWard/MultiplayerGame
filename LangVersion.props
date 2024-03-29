@@ -3,4 +3,7 @@
     <LangVersion>10</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="$(ProjectDir)\BannedSymbols.txt" />
+  </ItemGroup>
 </Project>
