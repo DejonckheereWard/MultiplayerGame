@@ -10,7 +10,6 @@ namespace Ward.MultiplayerGame.Debug
 
         private void Start()
         {
-            _logger.LogDebug("Debug message");
             _logger.ZLogDebug($"Debug message");
         }
     }
