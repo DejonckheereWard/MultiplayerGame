@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.cysharp.csprojmodifier": {
-      "version": "https://github.com/Cysharp/CsprojModifier.git?path=src/CsprojModifier/Assets/CsprojModifier",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "baba5e36b5e93cb0a4d08e170e01aa3890d327bf"
-    },
     "com.cysharp.memorypack": {
       "version": "https://github.com/Cysharp/MemoryPack.git?path=src/MemoryPack.Unity/Assets/MemoryPack.Unity",
       "depth": 0,
@@ -20,13 +13,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "d057074f177b078e29f10dd511b54df48a8806ea"
-    },
-    "com.cysharp.zlogger": {
-      "version": "https://github.com/Cysharp/ZLogger.git?path=src/ZLogger.Unity/Assets/ZLogger.Unity",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "b373ebbf67a41eb54ec283b4945785b29d2f7bca"
     },
     "com.firstgeargames.fishnet": {
       "version": "https://github.com/FirstGearGames/FishNet.git?path=Assets/FishNet",

@@ -1,19 +1,18 @@
 using Microsoft.Extensions.Logging;
-using ZLogger;
-using ZLogger.Unity;
 
-public static class LogManager
+namespace Ward.MultiplayerGame.Logging
 {
-    private static readonly ILoggerFactory _loggerFactory = LoggerFactory.Create(logging =>
+    public static class LogManager
     {
-        logging.AddZLoggerConsole();
-        logging.SetMinimumLevel(LogLevel.Trace);
-        logging.AddZLoggerUnityDebug(); // log to UnityDebug
-    });
+        private static readonly ILoggerFactory _loggerFactory = LoggerFactory.Create(logging =>
+        {
+            logging.SetMinimumLevel(LogLevel.Trace);
+        });
     
-    public static ILogger<T> GetLogger<T>()
-    {
-        // standard LoggerFactory caches logger per category so no need to cache in this manager
-        return _loggerFactory.CreateLogger<T>();
+        public static ILogger<T> GetLogger<T>()
+        {
+            // standard LoggerFactory caches logger per category so no need to cache in this manager
+            return _loggerFactory.CreateLogger<T>();
+        }
     }
 }
